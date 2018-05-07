@@ -1,63 +1,35 @@
-package org.scalapractices.exercises.ch2
+package org.scalapractices
+package exercises
+package ch2
 
 object Ex5 extends App {
 
   class SyncVar[T] {
 
-    private var empty: Boolean = true
+    private var empty: Boolean = ???
 
-    private var x: T = null.asInstanceOf[T]
+    private var x: T = ???
 
-    def isEmpty = synchronized {
-      empty
-    }
+    def isEmpty = ???
 
-    def nonEmpty = synchronized {
-      !empty
-    }
+    def nonEmpty = ???
 
-    def getWait():T = this.synchronized {
-      while (empty)
-        this.wait()
+    def getWait():T = ???
 
-      empty = true
-      this.notify()
-      x
-    }
-
-    def putWait(x: T): Unit = this.synchronized {
-      while (!empty)
-        this.wait()
-
-      empty = false
-      this.x = x
-      this.notify()
-    }
+    def putWait(x: T): Unit = ???
 
 
   }
 
   import org.learningconcurrency.ch2.thread
 
-  val syncVar = new SyncVar[Int]
+  val syncVar = ???
 
-  val producer = thread {
-    var x = 0
-    while(x < 15) {
-      syncVar.putWait(x)
-      x = x + 1
-    }
-  }
+  val producer = ???
 
-  val consumer = thread {
-    var x = -1
-    while(x < 14) {
-      x = syncVar.getWait
-      log(s"get: $x")
-    }
-  }
+  val consumer = ???
 
-  producer.join()
-  consumer.join()
+//  producer.join()
+//  consumer.join()
 
 }

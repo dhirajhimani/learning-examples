@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch7
+package org.scalapractices
+package exercises
+package ch7
 
 /**
   * Implement the transactional pair abstraction, represented with the TPair class:

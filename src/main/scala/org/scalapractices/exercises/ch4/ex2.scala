@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch4
+package org.scalapractices
+package exercises
+package ch4
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Promise}

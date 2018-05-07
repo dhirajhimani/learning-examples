@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch6
+package org.scalapractices
+package exercises
+package ch6
 
 import rx.lang.scala._
 

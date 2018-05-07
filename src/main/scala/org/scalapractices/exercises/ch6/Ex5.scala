@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch6
+package org.scalapractices
+package exercises
+package ch6
 
 /**
  * Implement the reactive cell abstraction, represented with the RCell[T] type:

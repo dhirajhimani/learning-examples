@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch4
+package org.scalapractices
+package exercises
+package ch4
 
 import scala.collection.immutable.IndexedSeq
 import scala.concurrent._

@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch4
+package org.scalapractices
+package exercises
+package ch4
 
 /**
  * Implement the IMap class, which represents a single-assignment map:

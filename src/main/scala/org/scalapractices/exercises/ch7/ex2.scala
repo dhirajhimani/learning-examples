@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch7
+package org.scalapractices
+package exercises
+package ch7
 
 /**
   * Use ScalaSTM to implement the mutable location abstraction from Haskell,

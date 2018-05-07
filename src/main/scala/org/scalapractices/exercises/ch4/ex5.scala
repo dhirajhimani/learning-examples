@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch4
+package org.scalapractices
+package exercises
+package ch4
 
 /**
  * Repeat the previous exercise, but use the Scala Async framework.

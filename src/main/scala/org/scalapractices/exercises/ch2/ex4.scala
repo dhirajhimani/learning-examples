@@ -1,66 +1,35 @@
-package org.scalapractices.exercises.ch2
+package org.scalapractices
+package exercises
+package ch2
 
 object Ex4 extends App {
 
   class SyncVar[T] {
 
-    private var empty: Boolean = true
+    private var empty: Boolean = ???
 
-    private var x: T = null.asInstanceOf[T]
+    private var x: T = ???
 
-    def get(): T = this.synchronized {
-      if (empty) throw new Exception("must be non-empty")
-      else {
-        empty = true
-        x
-      }
-    }
+    def get(): T = ???
 
-    def put(x: T): Unit = this.synchronized {
-      if (!empty) throw new Exception("must be empty")
-      else {
-        empty = false
-        this.x = x
-      }
-    }
+    def put(x: T): Unit = ???
 
-    def isEmpty = synchronized {
-      empty
-    }
+    def isEmpty = ???
 
-    def nonEmpty = synchronized {
-      !empty
-    }
+    def nonEmpty = ???
 
   }
 
   import org.learningconcurrency.ch2.thread
 
-  val syncVar = new SyncVar[Int]
+  val syncVar = ???
 
-  val producer = thread {
-    var x = 0
-    while (x < 15) {
-      if (syncVar.isEmpty) {
-        syncVar.put(x)
-        x = x + 1
-      }
+  val producer = ???
 
-    }
-  }
+  val consumer = ???
 
-  val consumer = thread {
-    var x = 0
-    while (x != 15) {
-      if (syncVar.nonEmpty) {
-        log(s"get = ${syncVar.get}")
-        x = x + 1
-      }
-    }
-  }
-
-  producer.join()
-  consumer.join()
+//  producer.join()
+//  consumer.join()
 
 
 

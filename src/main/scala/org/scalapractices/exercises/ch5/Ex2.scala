@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch5
+package org.scalapractices
+package exercises
+package ch5
 
 import scala.util.Random
 

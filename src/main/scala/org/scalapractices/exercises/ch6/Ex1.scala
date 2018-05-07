@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch6
+package org.scalapractices
+package exercises
+package ch6
 
 /**
   * Implement a custom Observable[Thread] object that emits an event when it detects that a thread was started.

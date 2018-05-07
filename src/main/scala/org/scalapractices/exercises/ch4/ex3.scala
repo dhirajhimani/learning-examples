@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch4
+package org.scalapractices
+package exercises
+package ch4
 
 /**
  * Extend the Future[T] type with the exists method, which takes a predicate and returns a Future[Boolean] object:

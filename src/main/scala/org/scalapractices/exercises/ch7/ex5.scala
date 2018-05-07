@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch7
+package org.scalapractices
+package exercises
+package ch7
 
 /**
   * Implement a transactional First In First Out (FIFO) queue,

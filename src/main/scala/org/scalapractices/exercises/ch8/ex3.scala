@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch8
+package org.scalapractices
+package exercises
+package ch8
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import akka.event.Logging

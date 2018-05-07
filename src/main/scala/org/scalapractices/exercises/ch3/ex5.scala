@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch3
+package org.scalapractices
+package exercises
+package ch3
 
 /**
  * Implement a LazyCell class with the following interface:

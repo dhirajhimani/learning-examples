@@ -1,4 +1,6 @@
-package org.scalapractices.exercises.ch6
+package org.scalapractices
+package exercises
+package ch6
 
 /**
   * Implement an Observable object that emits an event every 5 seconds and every 12 seconds,
